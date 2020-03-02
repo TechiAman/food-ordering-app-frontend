@@ -173,7 +173,7 @@ class Details extends Component {
         //location = location.toUpperCase();
         return (
             <div>
-                <Header baseurl={this.props.baseUrl} parentpage={"Details"} />
+                {/* <Header baseurl={this.props.baseUrl} parentpage={"Details"} /> */}
                 <div className="restaurant-info">
                     <img id="rest-img" src={this.state.restaurantDetails.photo_URL} alt={this.state.restaurantDetails.restaurant_name} />
                     <div className="rest-details">

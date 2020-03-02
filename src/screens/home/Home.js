@@ -62,7 +62,7 @@ class Home extends Component {
     // let index=0;
     return (
       <div>
-        <Header baseurl={this.props.baseUrl} onsearchtextChanged={this.onSearchTextChangedHandler} parentpage={"Home"} />
+        {/* <Header baseurl={this.props.baseUrl} onsearchtextChanged={this.onSearchTextChangedHandler} parentpage={"Home"} /> */}
         <br />
         <div className="listFlex">
           {this.state.restaurantDetails && this.state.restaurantDetails.map((restaurant, index) => (

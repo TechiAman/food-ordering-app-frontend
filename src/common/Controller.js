@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from '../screens/home/Home';
 import Checkout from '../screens/checkout/checkout'
 import Details from '../screens/details/Details';
+import Header from './header/Header';
 // import Header from './header/Header';
 
 class Controller extends Component {
@@ -13,6 +14,8 @@ class Controller extends Component {
   }
   render() {
     return (
+      <>
+      <Header baseurl={this.baseUrl} />
       <Router>
         <div className="main-container">
       {/*  <Route exact path='/' render={(props) => <Header {...props}  />} />*/}
@@ -21,6 +24,7 @@ class Controller extends Component {
        <Route exact path='/restaurant/:restaurantId' render={(props) => <Details {...props} baseUrl={this.baseUrl}/>}/>
         </div>
       </Router>
+      </>
     )
   }
 }

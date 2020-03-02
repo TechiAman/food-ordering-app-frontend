@@ -109,7 +109,7 @@ export default class NewAddress extends React.Component {
 		const {stateValue, city, locality,flatNo, show, drpdwn, pinCode, states, value, pinErrorMessage} = this.state;
 		return (
 			<>
-			<form className="root-main" onnoValidate autoComplete="off">
+			<form className="root-main"  autoComplete="off">
 
 			<FormControl>
         <InputLabel htmlFor="flatNumber">Flat/Building No.<sup>*</sup></InputLabel>
